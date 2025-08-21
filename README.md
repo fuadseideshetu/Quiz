@@ -188,255 +188,111 @@ def take_quiz(subject):
         else:
             print(f"Wrong! The correct answer is {q['answer']}")
     
-    print(f"\nYour score: {score}/{len(questions[subject])}")
-
-# Test a subject
-take_quiz("Mathematics")
-```
-Mathematics
-
-1. Solve for : 
-A) 4
-B) 6
-C) 7
-D) 5
-
-
-2. The roots of  are:
-A) 1 and 6
-B) 2 and 3
-C) 3 and 5
-D) 6 and 2
-
-
-3. A train travels 120 km in 3 hours. Its average speed is:
-A) 30 km/h
-B) 60 km/h
-C) 40 km/h
-D) 80 km/h
-
-
-4. If the perimeter of a square is 48 cm, the area is:
-A) 144 cm²
-B) 196 cm²
-C) 121 cm²
-D) 576 cm²
-
-
-5. Simplify: 
-A) 
-B) 
-C) 
-D) 
-
-
-
-
----
-
-Chemistry
-
-1. Electronic configuration of Sodium (Z = 11):
-A) 2, 8, 1
-B) 2, 6, 3
-C) 2, 7, 2
-D) 2, 8, 2
-
-
-2. Valency of Oxygen is:
-A) 1
-B) 2
-C) 3
-D) 4
-
-
-3. Physical change is:
-A) Burning of paper
-B) Melting of ice
-C) Rusting of iron
-D) Cooking rice
-
-
-4. Law of Conservation of Mass states:
-A) Mass is lost in a reaction
-B) Mass is gained in a reaction
-C) Mass is neither created nor destroyed
-D) Mass changes with pressure
-
-
-5. Ionic bond is formed by:
-A) Sharing of electrons
-B) Transfer of electrons
-C) Both A and B
-D) None
-
-
-
-
----
-
-Biology
-
-1. Function of mitochondria:
-A) Photosynthesis
-B) Protein synthesis
-C) Energy production
-D) Transport
-
-
-2. Xylem transports:
-A) Food
-B) Water
-C) Oxygen
-D) Hormones
-
-
-3. Photosynthesis produces:
-A) Oxygen and Glucose
-B) Carbon dioxide and Water
-C) Heat and ATP
-D) Protein and Oxygen
-
-
-4. Aerobic respiration requires:
-A) Oxygen
-B) Nitrogen
-C) No oxygen
-D) Water only
-
-
-5. Oxygen in humans is transported by:
-A) Platelets
-B) Red blood cells
-C) White blood cells
-D) Plasma
-
-
-
-
----
-
-English
-
-1. Synonym of “brave”:
-A) Cowardly
-B) Courageous
-C) Weak
-D) Lazy
-
-
-2. Passive voice of The teacher is explaining the lesson:
-A) The lesson was explained by the teacher.
-B) The lesson is being explained by the teacher.
-C) The teacher explains the lesson.
-D) The lesson has been explained.
-
-
-3. Figure of speech in “The sun smiled at us”:
-A) Metaphor
-B) Simile
-C) Personification
-D) Hyperbole
-
-
-4. Importance of reading:
-A) Makes us lazy
-B) Improves knowledge
-C) Wastes time
-D) Is boring
-
-
-5. Correct sentence: She is taller ___ her brother.
-A) than
-B) then
-C) there
-D) that
-
-
-
-
----
-
-Physics
-
-1. Newton’s First Law is also called:
-A) Law of Acceleration
-B) Law of Inertia
-C) Law of Gravity
-D) Law of Work
-
-
-2. A car moves with velocity  for 10 s. Distance covered =
-A) 100 m
-B) 150 m
-C) 200 m
-D) 250 m
-
-
-3. SI unit of work is:
-A) Watt
-B) Joule
-C) Newton
-D) Pascal
-
-
-4. Difference between mass and weight:
-A) Mass depends on gravity, weight doesn’t
-B) Weight depends on gravity, mass doesn’t
-C) Both depend on gravity
-D) Neither depends on gravity
-
-
-5. Splitting of white light by prism is called:
-A) Reflection
-B) Refraction
-C) Dispersion
-D) Diffraction
-
-
-
-
----
-
-Aptitude
-
-1. If 5 pens cost $75, cost of 8 pens =
-A) $100
-B) $110
-C) $120
-D) $150
-
-
-2. Average of 4 numbers = 20. Sum =
-A) 60
-B) 70
-C) 80
-D) 90
-
-
-3. Next term: 2, 4, 8, 16, ?
-A) 18
-B) 24
-C) 30
-D) 32
-
-
-4. A man walks 3 km east, then 4 km north. Distance from start =
-A) 5 km
-B) 6 km
-C) 7 km
-D) 8 km
-
-
-5. Boys : Girls = 3 : 2. If 30 students, girls =
-A) 10
-B) 12
-C) 15
-D) 18
-
-
-
-
-
----
-
+    print
+
+
+# Quiz Questions with Options and Answers
+quiz = {
+    "maths": [
+        {"q": "Solve for x: 2x + 7 = 19", 
+         "options": ["4", "6", "7", "5"], "answer": "B"},
+        {"q": "The roots of x^2 - 5x + 6 = 0 are:", 
+         "options": ["1 and 6", "2 and 3", "3 and 5", "6 and 2"], "answer": "B"},
+        {"q": "A train travels 120 km in 3 hours. Its average speed is:", 
+         "options": ["30 km/h", "60 km/h", "40 km/h", "80 km/h"], "answer": "C"},
+        {"q": "If the perimeter of a square is 48 cm, the area is:", 
+         "options": ["144 cm²", "196 cm²", "121 cm²", "576 cm²"], "answer": "A"},
+        {"q": "Simplify: (3x^2y)/(6xy^2)", 
+         "options": ["x/2y", "y/2x", "x/y", "y/x"], "answer": "A"}
+    ],
+    "chemistry": [
+        {"q": "Electronic configuration of Sodium (Z = 11):", 
+         "options": ["2, 8, 1", "2, 6, 3", "2, 7, 2", "2, 8, 2"], "answer": "A"},
+        {"q": "Valency of Oxygen is:", 
+         "options": ["1", "2", "3", "4"], "answer": "B"},
+        {"q": "Physical change is:", 
+         "options": ["Burning of paper", "Melting of ice", "Rusting of iron", "Cooking rice"], "answer": "B"},
+        {"q": "Law of Conservation of Mass states:", 
+         "options": ["Mass is lost in a reaction", "Mass is gained in a reaction", 
+                     "Mass is neither created nor destroyed", "Mass changes with pressure"], "answer": "C"},
+        {"q": "Ionic bond is formed by:", 
+         "options": ["Sharing of electrons", "Transfer of electrons", "Both A and B", "None"], "answer": "B"}
+    ],
+    "biology": [
+        {"q": "Function of mitochondria:", 
+         "options": ["Photosynthesis", "Protein synthesis", "Energy production", "Transport"], "answer": "C"},
+        {"q": "Xylem transports:", 
+         "options": ["Food", "Water", "Oxygen", "Hormones"], "answer": "B"},
+        {"q": "Photosynthesis produces:", 
+         "options": ["Oxygen and Glucose", "Carbon dioxide and Water", "Heat and ATP", "Protein and Oxygen"], "answer": "A"},
+        {"q": "Aerobic respiration requires:", 
+         "options": ["Oxygen", "Nitrogen", "No oxygen", "Water only"], "answer": "A"},
+        {"q": "Oxygen in humans is transported by:", 
+         "options": ["Platelets", "Red blood cells", "White blood cells", "Plasma"], "answer": "B"}
+    ],
+    "english": [
+        {"q": "Synonym of 'brave':", 
+         "options": ["Cowardly", "Courageous", "Weak", "Lazy"], "answer": "B"},
+        {"q": "Passive voice of 'The teacher is explaining the lesson':", 
+         "options": ["The lesson was explained by the teacher.", 
+                     "The lesson is being explained by the teacher.", 
+                     "The teacher explains the lesson.", 
+                     "The lesson has been explained."], "answer": "B"},
+        {"q": "Figure of speech in 'The sun smiled at us':", 
+         "options": ["Metaphor", "Simile", "Personification", "Hyperbole"], "answer": "C"},
+        {"q": "Importance of reading:", 
+         "options": ["Makes us lazy", "Improves knowledge", "Wastes time", "Is boring"], "answer": "B"},
+        {"q": "Correct sentence: She is taller ___ her brother.", 
+         "options": ["than", "then", "there", "that"], "answer": "A"}
+    ],
+    "physics": [
+        {"q": "Newton’s First Law is also called:", 
+         "options": ["Law of Acceleration", "Law of Inertia", "Law of Gravity", "Law of Work"], "answer": "B"},
+        {"q": "A car moves with velocity 20 m/s for 10 s. Distance covered =", 
+         "options": ["100 m", "150 m", "200 m", "250 m"], "answer": "C"},
+        {"q": "SI unit of work is:", 
+         "options": ["Watt", "Joule", "Newton", "Pascal"], "answer": "B"},
+        {"q": "Difference between mass and weight:", 
+         "options": ["Mass depends on gravity, weight doesn’t", 
+                     "Weight depends on gravity, mass doesn’t", 
+                     "Both depend on gravity", "Neither depends on gravity"], "answer": "B"},
+        {"q": "Splitting of white light by prism is called:", 
+         "options": ["Reflection", "Refraction", "Dispersion", "Diffraction"], "answer": "C"}
+    ],
+    "aptitude": [
+        {"q": "If 5 pens cost $75, cost of 8 pens =", 
+         "options": ["$100", "$110", "$120", "$150"], "answer": "C"},
+        {"q": "Average of 4 numbers = 20. Sum =", 
+         "options": ["60", "70", "80", "90"], "answer": "C"},
+        {"q": "Next term: 2, 4, 8, 16, ?", 
+         "options": ["18", "24", "30", "32"], "answer": "D"},
+        {"q": "A man walks 3 km east, then 4 km north. Distance from start =", 
+         "options": ["5 km", "6 km", "7 km", "8 km"], "answer": "A"},
+        {"q": "Boys : Girls = 3 : 2. If 30 students, girls =", 
+         "options": ["10", "12", "15", "18"], "answer": "B"}
+    ]
+}
+
+# User interaction
+print("Subjects: maths, chemistry, biology, english, physics, aptitude")
+subject = input("Choose a subject: ").lower().strip()
+
+if subject in quiz:
+    print("\nAvailable Questions:\n")
+    for i, q in enumerate(quiz[subject], 1):
+        print(f"{i}. {q['q']}")
+        for opt_idx, option in zip("ABCD", q["options"]):
+            print(f"   {opt_idx}) {option}")
+    
+    choice = int(input("\nEnter question number (1-5): "))
+    if 1 <= choice <= 5:
+        ans = input("Enter your answer (A/B/C/D): ").upper().strip()
+        correct = quiz[subject][choice - 1]["answer"]
+        if ans == correct:
+            print("✅ Correct!")
+        else:
+            print(f"❌ Wrong! Correct answer is {correct}")
+    else:
+        print("Invalid question number.")
+else:
+    print("Invalid subject.")
