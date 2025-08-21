@@ -188,7 +188,9 @@ def take_quiz(subject):
         else:
             print(f"Wrong! The correct answer is {q['answer']}")
     
-    print
+    print(f"\nylon score: {score}/{len(questions[subject])}")
+# Test a subject
+take_quiz("Mathematics")
 
 
 # Quiz Questions with Options and Answers
