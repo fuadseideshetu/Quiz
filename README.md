@@ -170,91 +170,53 @@ questions = {
 }
 ```
 
-# ====== Fuad Seid Quiz program  (6 subjects) ======
-
 quizzes = {
     "Mathematics": [
-        {"question": "Solve for x: 2x + 3 = 13", 
-         "options": ["A) 4", "B) 6", "C) 7", "D) 5"], "answer": "A"},
-        {"question": "The roots of x² - 5x + 6 = 0 are:", 
-         "options": ["A) 1 and 6", "B) 2 and 3", "C) 3 and 5", "D) 6 and 2"], "answer": "B"},
-        {"question": "A train travels 120 km in 3 hours. Its average speed is:", 
-         "options": ["A) 30 km/h", "B) 60 km/h", "C) 40 km/h", "D) 80 km/h"], "answer": "B"},
-        {"question": "If the perimeter of a square is 48 cm, the area is:", 
-         "options": ["A) 144 cm²", "B) 196 cm²", "C) 121 cm²", "D) 576 cm²"], "answer": "A"},
-        {"question": "Simplify: (25 ÷ 5) + (12 ÷ 3)", 
-         "options": ["A) 3", "B) 7", "C) 9", "D) 11"], "answer": "D"}
+        {"question": "Solve for x: 2x + 3 = 13", "options": ["A) 4", "B) 6", "C) 7", "D) 5"], "answer": "A"},
+        {"question": "The roots of x² - 5x + 6 = 0 are:", "options": ["A) 1 and 6", "B) 2 and 3", "C) 3 and 5", "D) 6 and 2"], "answer": "B"},
+        {"question": "A train travels 120 km in 3 hours. Its average speed is:", "options": ["A) 30 km/h", "B) 60 km/h", "C) 40 km/h", "D) 80 km/h"], "answer": "B"},
+        {"question": "If the perimeter of a square is 48 cm, the area is:", "options": ["A) 144 cm²", "B) 196 cm²", "C) 121 cm²", "D) 576 cm²"], "answer": "A"},
+        {"question": "Simplify: (25 ÷ 5) + (12 ÷ 3)", "options": ["A) 3", "B) 7", "C) 9", "D) 11"], "answer": "D"}
     ],
-
     "Chemistry": [
-        {"question": "Electronic configuration of Sodium (Z = 11):", 
-         "options": ["A) 2, 8, 1", "B) 2, 6, 3", "C) 2, 7, 2", "D) 2, 8, 2"], "answer": "A"},
-        {"question": "Valency of Oxygen is:", 
-         "options": ["A) 1", "B) 2", "C) 3", "D) 4"], "answer": "B"},
-        {"question": "Which of the following is a physical change?", 
-         "options": ["A) Burning of paper", "B) Melting of ice", "C) Rusting of iron", "D) Cooking rice"], "answer": "B"},
-        {"question": "Law of Conservation of Mass states:", 
-         "options": ["A) Mass is lost", "B) Mass is gained", "C) Mass is neither created nor destroyed", "D) Mass changes"], "answer": "C"},
-        {"question": "Ionic bond is formed by:", 
-         "options": ["A) Sharing of electrons", "B) Transfer of electrons", "C) Both A and B", "D) None"], "answer": "B"}
+        {"question": "Electronic configuration of Sodium (Z = 11):", "options": ["A) 2, 8, 1", "B) 2, 6, 3", "C) 2, 7, 2", "D) 2, 8, 2"], "answer": "A"},
+        {"question": "Valency of Oxygen is:", "options": ["A) 1", "B) 2", "C) 3", "D) 4"], "answer": "B"},
+        {"question": "Which of the following is a physical change?", "options": ["A) Burning of paper", "B) Melting of ice", "C) Rusting of iron", "D) Cooking rice"], "answer": "B"},
+        {"question": "Law of Conservation of Mass states:", "options": ["A) Mass is lost", "B) Mass is gained", "C) Mass is neither created nor destroyed", "D) Mass changes"], "answer": "C"},
+        {"question": "Ionic bond is formed by:", "options": ["A) Sharing of electrons", "B) Transfer of electrons", "C) Both A and B", "D) None"], "answer": "B"}
     ],
-
     "Biology": [
-        {"question": "Function of mitochondria:", 
-         "options": ["A) Photosynthesis", "B) Protein synthesis", "C) Energy production", "D) Transport"], "answer": "C"},
-        {"question": "Xylem transports:", 
-         "options": ["A) Food", "B) Water", "C) Oxygen", "D) Hormones"], "answer": "B"},
-        {"question": "Photosynthesis produces:", 
-         "options": ["A) Oxygen and Glucose", "B) CO2 and Water", "C) Heat and ATP", "D) Protein and Oxygen"], "answer": "A"},
-        {"question": "Aerobic respiration requires:", 
-         "options": ["A) Oxygen", "B) Nitrogen", "C) No oxygen", "D) Water only"], "answer": "A"},
-        {"question": "Oxygen in humans is transported by:", 
-         "options": ["A) Platelets", "B) RBC", "C) WBC", "D) Plasma"], "answer": "B"}
+        {"question": "Function of mitochondria:", "options": ["A) Photosynthesis", "B) Protein synthesis", "C) Energy production", "D) Transport"], "answer": "C"},
+        {"question": "Xylem transports:", "options": ["A) Food", "B) Water", "C) Oxygen", "D) Hormones"], "answer": "B"},
+        {"question": "Photosynthesis produces:", "options": ["A) Oxygen and Glucose", "B) CO2 and Water", "C) Heat and ATP", "D) Protein and Oxygen"], "answer": "A"},
+        {"question": "Aerobic respiration requires:", "options": ["A) Oxygen", "B) Nitrogen", "C) No oxygen", "D) Water only"], "answer": "A"},
+        {"question": "Oxygen in humans is transported by:", "options": ["A) Platelets", "B) RBC", "C) WBC", "D) Plasma"], "answer": "B"}
     ],
-
     "English": [
-        {"question": "Synonym of 'brave':", 
-         "options": ["A) Cowardly", "B) Courageous", "C) Weak", "D) Lazy"], "answer": "B"},
-        {"question": "Passive voice of 'The teacher is explaining the lesson':", 
-         "options": ["A) The lesson was explained", "B) The lesson is being explained", "C) The teacher explains", "D) The lesson has been explained"], "answer": "B"},
-        {"question": "Figure of speech in 'The sun smiled at us':", 
-         "options": ["A) Metaphor", "B) Simile", "C) Personification", "D) Hyperbole"], "answer": "C"},
-        {"question": "Importance of reading:", 
-         "options": ["A) Makes us lazy", "B) Improves knowledge", "C) Wastes time", "D) Is boring"], "answer": "B"},
-        {"question": "Correct sentence: She is taller ___ her brother.", 
-         "options": ["A) than", "B) then", "C) there", "D) that"], "answer": "A"}
+        {"question": "Synonym of 'brave':", "options": ["A) Cowardly", "B) Courageous", "C) Weak", "D) Lazy"], "answer": "B"},
+        {"question": "Passive voice of 'The teacher is explaining the lesson':", "options": ["A) The lesson was explained", "B) The lesson is being explained", "C) The teacher explains", "D) The lesson has been explained"], "answer": "B"},
+        {"question": "Figure of speech in 'The sun smiled at us':", "options": ["A) Metaphor", "B) Simile", "C) Personification", "D) Hyperbole"], "answer": "C"},
+        {"question": "Importance of reading:", "options": ["A) Makes us lazy", "B) Improves knowledge", "C) Wastes time", "D) Is boring"], "answer": "B"},
+        {"question": "Correct sentence: She is taller ___ her brother.", "options": ["A) than", "B) then", "C) there", "D) that"], "answer": "A"}
     ],
-
     "Physics": [
-        {"question": "Newton’s First Law is also called:", 
-         "options": ["A) Law of Acceleration", "B) Law of Inertia", "C) Law of Gravity", "D) Law of Work"], "answer": "B"},
-        {"question": "A car moves with velocity 20 m/s for 10 s. Distance covered =", 
-         "options": ["A) 100 m", "B) 150 m", "C) 200 m", "D) 250 m"], "answer": "C"},
-        {"question": "SI unit of work is:", 
-         "options": ["A) Watt", "B) Joule", "C) Newton", "D) Pascal"], "answer": "B"},
-        {"question": "Difference between mass and weight:", 
-         "options": ["A) Mass depends on gravity", "B) Weight depends on gravity", "C) Both depend on gravity", "D) Neither"], "answer": "B"},
-        {"question": "Splitting of white light by prism is called:", 
-         "options": ["A) Reflection", "B) Refraction", "C) Dispersion", "D) Diffraction"], "answer": "C"}
+        {"question": "Newton’s First Law is also called:", "options": ["A) Law of Acceleration", "B) Law of Inertia", "C) Law of Gravity", "D) Law of Work"], "answer": "B"},
+        {"question": "A car moves with velocity 20 m/s for 10 s. Distance covered =", "options": ["A) 100 m", "B) 150 m", "C) 200 m", "D) 250 m"], "answer": "C"},
+        {"question": "SI unit of work is:", "options": ["A) Watt", "B) Joule", "C) Newton", "D) Pascal"], "answer": "B"},
+        {"question": "Difference between mass and weight:", "options": ["A) Mass depends on gravity", "B) Weight depends on gravity", "C) Both depend on gravity", "D) Neither"], "answer": "B"},
+        {"question": "Splitting of white light by prism is called:", "options": ["A) Reflection", "B) Refraction", "C) Dispersion", "D) Diffraction"], "answer": "C"}
     ],
-
     "Aptitude": [
-        {"question": "If 5 pens cost $75, cost of 8 pens =", 
-         "options": ["A) $100", "B) $110", "C) $120", "D) $150"], "answer": "C"},
-        {"question": "Average of 4 numbers = 20. Sum =", 
-         "options": ["A) 60", "B) 70", "C) 80", "D) 90"], "answer": "C"},
-        {"question": "Next term: 2, 4, 8, 16, ?", 
-         "options": ["A) 18", "B) 24", "C) 30", "D) 32"], "answer": "D"},
-        {"question": "A man walks 3 km east, then 4 km north. Distance from start =", 
-         "options": ["A) 5 km", "B) 6 km", "C) 7 km", "D) 8 km"], "answer": "A"},
-        {"question": "Boys : Girls = 3 : 2. If 30 students, girls =", 
-         "options": ["A) 10", "B) 12", "C) 15", "D) 18"], "answer": "C"}
+        {"question": "If 5 pens cost $75, cost of 8 pens =", "options": ["A) $100", "B) $110", "C) $120", "D) $150"], "answer": "C"},
+        {"question": "Average of 4 numbers = 20. Sum =", "options": ["A) 60", "B) 70", "C) 80", "D) 90"], "answer": "C"},
+        {"question": "Next term: 2, 4, 8, 16, ?", "options": ["A) 18", "B) 24", "C) 30", "D) 32"], "answer": "D"},
+        {"question": "A man walks 3 km east, then 4 km north. Distance from start =", "options": ["A) 5 km", "B) 6 km", "C) 7 km", "D) 8 km"], "answer": "A"},
+        {"question": "Boys : Girls = 3 : 2. If 30 students, girls =", "options": ["A) 10", "B) 12", "C) 15", "D) 18"], "answer": "C"}
     ]
 }
+
 total_score = 0
 total_questions = 0
-
-print("\n===== Combined Quiz Across All Subjects =====")
 
 for subject, questions in quizzes.items():
     print(f"\n--- {subject} ---")
@@ -270,7 +232,4 @@ for subject, questions in quizzes.items():
         else:
             print(f"❌ Wrong! Correct answer is {q['answer']}")
 
-
-print("\n=================================")
-print(f"🎯 Your Final Total Score = {total_score}/{total_questions}")
-print("=================================")
+print(f"\nYour Total Score = {total_score}/{total_questions}")
