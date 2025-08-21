@@ -251,8 +251,6 @@ quizzes = {
          "options": ["A) 10", "B) 12", "C) 15", "D) 18"], "answer": "C"}
     ]
 }
-
-# ===== RUN ALL QUIZZES TOGETHER =====
 total_score = 0
 total_questions = 0
 
@@ -272,7 +270,7 @@ for subject, questions in quizzes.items():
         else:
             print(f"❌ Wrong! Correct answer is {q['answer']}")
 
-# ===== FINAL SCORE =====
+
 print("\n=================================")
 print(f"🎯 Your Final Total Score = {total_score}/{total_questions}")
 print("=================================")
