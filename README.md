@@ -444,5 +444,5 @@ for subject, questions in quizzes.items():
             print(f"❌ Wrong! Correct answer is {q['answer']}")
 
 print(f"\nYour Total Score = {total_score}/{total_questions}")
-fuad b
+
 
