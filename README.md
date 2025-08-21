@@ -170,131 +170,109 @@ questions = {
 }
 ```
 
-You can use this dictionary to create a quiz application. Here's a simple example of how to use it:
+# ====== Fuad Seid Quiz program  (6 subjects) ======
 
-```python
-# Example usage
-def take_quiz(subject):
-    score = 0
-    for i, q in enumerate(questions[subject], 1):
-        print(f"\nQ{i}: {q['question']}")
-        for option in q['options']:
-            print(option)
-        
-        answer = input("Your answer (A/B/C/D): ").upper()
-        if answer == q['answer']:
-            print("Correct!")
-            score += 1
-        else:
-            print(f"Wrong! The correct answer is {q['answer']}")
-    
-    print(f"\nylon score: {score}/{len(questions[subject])}")
-# Test a subject
-take_quiz("Mathematics")
+quizzes = {
+    "Mathematics": [
+        {"question": "Solve for x: 2x + 3 = 13", 
+         "options": ["A) 4", "B) 6", "C) 7", "D) 5"], "answer": "A"},
+        {"question": "The roots of x² - 5x + 6 = 0 are:", 
+         "options": ["A) 1 and 6", "B) 2 and 3", "C) 3 and 5", "D) 6 and 2"], "answer": "B"},
+        {"question": "A train travels 120 km in 3 hours. Its average speed is:", 
+         "options": ["A) 30 km/h", "B) 60 km/h", "C) 40 km/h", "D) 80 km/h"], "answer": "B"},
+        {"question": "If the perimeter of a square is 48 cm, the area is:", 
+         "options": ["A) 144 cm²", "B) 196 cm²", "C) 121 cm²", "D) 576 cm²"], "answer": "A"},
+        {"question": "Simplify: (25 ÷ 5) + (12 ÷ 3)", 
+         "options": ["A) 3", "B) 7", "C) 9", "D) 11"], "answer": "D"}
+    ],
 
+    "Chemistry": [
+        {"question": "Electronic configuration of Sodium (Z = 11):", 
+         "options": ["A) 2, 8, 1", "B) 2, 6, 3", "C) 2, 7, 2", "D) 2, 8, 2"], "answer": "A"},
+        {"question": "Valency of Oxygen is:", 
+         "options": ["A) 1", "B) 2", "C) 3", "D) 4"], "answer": "B"},
+        {"question": "Which of the following is a physical change?", 
+         "options": ["A) Burning of paper", "B) Melting of ice", "C) Rusting of iron", "D) Cooking rice"], "answer": "B"},
+        {"question": "Law of Conservation of Mass states:", 
+         "options": ["A) Mass is lost", "B) Mass is gained", "C) Mass is neither created nor destroyed", "D) Mass changes"], "answer": "C"},
+        {"question": "Ionic bond is formed by:", 
+         "options": ["A) Sharing of electrons", "B) Transfer of electrons", "C) Both A and B", "D) None"], "answer": "B"}
+    ],
 
-# Quiz Questions with Options and Answers
-quiz = {
-    "maths": [
-        {"q": "Solve for x: 2x + 7 = 19", 
-         "options": ["4", "6", "7", "5"], "answer": "B"},
-        {"q": "The roots of x^2 - 5x + 6 = 0 are:", 
-         "options": ["1 and 6", "2 and 3", "3 and 5", "6 and 2"], "answer": "B"},
-        {"q": "A train travels 120 km in 3 hours. Its average speed is:", 
-         "options": ["30 km/h", "60 km/h", "40 km/h", "80 km/h"], "answer": "C"},
-        {"q": "If the perimeter of a square is 48 cm, the area is:", 
-         "options": ["144 cm²", "196 cm²", "121 cm²", "576 cm²"], "answer": "A"},
-        {"q": "Simplify: (3x^2y)/(6xy^2)", 
-         "options": ["x/2y", "y/2x", "x/y", "y/x"], "answer": "A"}
+    "Biology": [
+        {"question": "Function of mitochondria:", 
+         "options": ["A) Photosynthesis", "B) Protein synthesis", "C) Energy production", "D) Transport"], "answer": "C"},
+        {"question": "Xylem transports:", 
+         "options": ["A) Food", "B) Water", "C) Oxygen", "D) Hormones"], "answer": "B"},
+        {"question": "Photosynthesis produces:", 
+         "options": ["A) Oxygen and Glucose", "B) CO2 and Water", "C) Heat and ATP", "D) Protein and Oxygen"], "answer": "A"},
+        {"question": "Aerobic respiration requires:", 
+         "options": ["A) Oxygen", "B) Nitrogen", "C) No oxygen", "D) Water only"], "answer": "A"},
+        {"question": "Oxygen in humans is transported by:", 
+         "options": ["A) Platelets", "B) RBC", "C) WBC", "D) Plasma"], "answer": "B"}
     ],
-    "chemistry": [
-        {"q": "Electronic configuration of Sodium (Z = 11):", 
-         "options": ["2, 8, 1", "2, 6, 3", "2, 7, 2", "2, 8, 2"], "answer": "A"},
-        {"q": "Valency of Oxygen is:", 
-         "options": ["1", "2", "3", "4"], "answer": "B"},
-        {"q": "Physical change is:", 
-         "options": ["Burning of paper", "Melting of ice", "Rusting of iron", "Cooking rice"], "answer": "B"},
-        {"q": "Law of Conservation of Mass states:", 
-         "options": ["Mass is lost in a reaction", "Mass is gained in a reaction", 
-                     "Mass is neither created nor destroyed", "Mass changes with pressure"], "answer": "C"},
-        {"q": "Ionic bond is formed by:", 
-         "options": ["Sharing of electrons", "Transfer of electrons", "Both A and B", "None"], "answer": "B"}
+
+    "English": [
+        {"question": "Synonym of 'brave':", 
+         "options": ["A) Cowardly", "B) Courageous", "C) Weak", "D) Lazy"], "answer": "B"},
+        {"question": "Passive voice of 'The teacher is explaining the lesson':", 
+         "options": ["A) The lesson was explained", "B) The lesson is being explained", "C) The teacher explains", "D) The lesson has been explained"], "answer": "B"},
+        {"question": "Figure of speech in 'The sun smiled at us':", 
+         "options": ["A) Metaphor", "B) Simile", "C) Personification", "D) Hyperbole"], "answer": "C"},
+        {"question": "Importance of reading:", 
+         "options": ["A) Makes us lazy", "B) Improves knowledge", "C) Wastes time", "D) Is boring"], "answer": "B"},
+        {"question": "Correct sentence: She is taller ___ her brother.", 
+         "options": ["A) than", "B) then", "C) there", "D) that"], "answer": "A"}
     ],
-    "biology": [
-        {"q": "Function of mitochondria:", 
-         "options": ["Photosynthesis", "Protein synthesis", "Energy production", "Transport"], "answer": "C"},
-        {"q": "Xylem transports:", 
-         "options": ["Food", "Water", "Oxygen", "Hormones"], "answer": "B"},
-        {"q": "Photosynthesis produces:", 
-         "options": ["Oxygen and Glucose", "Carbon dioxide and Water", "Heat and ATP", "Protein and Oxygen"], "answer": "A"},
-        {"q": "Aerobic respiration requires:", 
-         "options": ["Oxygen", "Nitrogen", "No oxygen", "Water only"], "answer": "A"},
-        {"q": "Oxygen in humans is transported by:", 
-         "options": ["Platelets", "Red blood cells", "White blood cells", "Plasma"], "answer": "B"}
+
+    "Physics": [
+        {"question": "Newton’s First Law is also called:", 
+         "options": ["A) Law of Acceleration", "B) Law of Inertia", "C) Law of Gravity", "D) Law of Work"], "answer": "B"},
+        {"question": "A car moves with velocity 20 m/s for 10 s. Distance covered =", 
+         "options": ["A) 100 m", "B) 150 m", "C) 200 m", "D) 250 m"], "answer": "C"},
+        {"question": "SI unit of work is:", 
+         "options": ["A) Watt", "B) Joule", "C) Newton", "D) Pascal"], "answer": "B"},
+        {"question": "Difference between mass and weight:", 
+         "options": ["A) Mass depends on gravity", "B) Weight depends on gravity", "C) Both depend on gravity", "D) Neither"], "answer": "B"},
+        {"question": "Splitting of white light by prism is called:", 
+         "options": ["A) Reflection", "B) Refraction", "C) Dispersion", "D) Diffraction"], "answer": "C"}
     ],
-    "english": [
-        {"q": "Synonym of 'brave':", 
-         "options": ["Cowardly", "Courageous", "Weak", "Lazy"], "answer": "B"},
-        {"q": "Passive voice of 'The teacher is explaining the lesson':", 
-         "options": ["The lesson was explained by the teacher.", 
-                     "The lesson is being explained by the teacher.", 
-                     "The teacher explains the lesson.", 
-                     "The lesson has been explained."], "answer": "B"},
-        {"q": "Figure of speech in 'The sun smiled at us':", 
-         "options": ["Metaphor", "Simile", "Personification", "Hyperbole"], "answer": "C"},
-        {"q": "Importance of reading:", 
-         "options": ["Makes us lazy", "Improves knowledge", "Wastes time", "Is boring"], "answer": "B"},
-        {"q": "Correct sentence: She is taller ___ her brother.", 
-         "options": ["than", "then", "there", "that"], "answer": "A"}
-    ],
-    "physics": [
-        {"q": "Newton’s First Law is also called:", 
-         "options": ["Law of Acceleration", "Law of Inertia", "Law of Gravity", "Law of Work"], "answer": "B"},
-        {"q": "A car moves with velocity 20 m/s for 10 s. Distance covered =", 
-         "options": ["100 m", "150 m", "200 m", "250 m"], "answer": "C"},
-        {"q": "SI unit of work is:", 
-         "options": ["Watt", "Joule", "Newton", "Pascal"], "answer": "B"},
-        {"q": "Difference between mass and weight:", 
-         "options": ["Mass depends on gravity, weight doesn’t", 
-                     "Weight depends on gravity, mass doesn’t", 
-                     "Both depend on gravity", "Neither depends on gravity"], "answer": "B"},
-        {"q": "Splitting of white light by prism is called:", 
-         "options": ["Reflection", "Refraction", "Dispersion", "Diffraction"], "answer": "C"}
-    ],
-    "aptitude": [
-        {"q": "If 5 pens cost $75, cost of 8 pens =", 
-         "options": ["$100", "$110", "$120", "$150"], "answer": "C"},
-        {"q": "Average of 4 numbers = 20. Sum =", 
-         "options": ["60", "70", "80", "90"], "answer": "C"},
-        {"q": "Next term: 2, 4, 8, 16, ?", 
-         "options": ["18", "24", "30", "32"], "answer": "D"},
-        {"q": "A man walks 3 km east, then 4 km north. Distance from start =", 
-         "options": ["5 km", "6 km", "7 km", "8 km"], "answer": "A"},
-        {"q": "Boys : Girls = 3 : 2. If 30 students, girls =", 
-         "options": ["10", "12", "15", "18"], "answer": "B"}
+
+    "Aptitude": [
+        {"question": "If 5 pens cost $75, cost of 8 pens =", 
+         "options": ["A) $100", "B) $110", "C) $120", "D) $150"], "answer": "C"},
+        {"question": "Average of 4 numbers = 20. Sum =", 
+         "options": ["A) 60", "B) 70", "C) 80", "D) 90"], "answer": "C"},
+        {"question": "Next term: 2, 4, 8, 16, ?", 
+         "options": ["A) 18", "B) 24", "C) 30", "D) 32"], "answer": "D"},
+        {"question": "A man walks 3 km east, then 4 km north. Distance from start =", 
+         "options": ["A) 5 km", "B) 6 km", "C) 7 km", "D) 8 km"], "answer": "A"},
+        {"question": "Boys : Girls = 3 : 2. If 30 students, girls =", 
+         "options": ["A) 10", "B) 12", "C) 15", "D) 18"], "answer": "C"}
     ]
 }
 
-# User interaction
-print("Subjects: maths, chemistry, biology, english, physics, aptitude")
-subject = input("Choose a subject: ").lower().strip()
+# ===== RUN ALL QUIZZES TOGETHER =====
+total_score = 0
+total_questions = 0
 
-if subject in quiz:
-    print("\nAvailable Questions:\n")
-    for i, q in enumerate(quiz[subject], 1):
-        print(f"{i}. {q['q']}")
-        for opt_idx, option in zip("ABCD", q["options"]):
-            print(f"   {opt_idx}) {option}")
-    
-    choice = int(input("\nEnter question number (1-5): "))
-    if 1 <= choice <= 5:
-        ans = input("Enter your answer (A/B/C/D): ").upper().strip()
-        correct = quiz[subject][choice - 1]["answer"]
-        if ans == correct:
+print("\n===== Combined Quiz Across All Subjects =====")
+
+for subject, questions in quizzes.items():
+    print(f"\n--- {subject} ---")
+    for q in questions:
+        print("\n" + q["question"])
+        for option in q["options"]:
+            print(option)
+        user_ans = input("Your answer (A/B/C/D): ")
+        total_questions += 1
+        if user_ans.upper() == q["answer"]:
             print("✅ Correct!")
+            total_score += 1
         else:
-            print(f"❌ Wrong! Correct answer is {correct}")
-    else:
-        print("Invalid question number.")
-else:
-    print("Invalid subject.")
+            print(f"❌ Wrong! Correct answer is {q['answer']}")
+
+# ===== FINAL SCORE =====
+print("\n=================================")
+print(f"🎯 Your Final Total Score = {total_score}/{total_questions}")
+print("=================================")
