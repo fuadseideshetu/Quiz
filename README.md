@@ -167,11 +167,8 @@ questions = {
             "answer": "C"
         }
     ]
-}
-```
-
-quizzes = {
-    "Mathematics": [
+#Fuad Seid
+"Mathematics": [
         {"question": "Solve for x: 2x + 3 = 13", "options": ["A) 4", "B) 6", "C) 7", "D) 5"], "answer": "A"},
         {"question": "The roots of x² - 5x + 6 = 0 are:", "options": ["A) 1 and 6", "B) 2 and 3", "C) 3 and 5", "D) 6 and 2"], "answer": "B"},
         {"question": "A train travels 120 km in 3 hours. Its average speed is:", "options": ["A) 30 km/h", "B) 60 km/h", "C) 40 km/h", "D) 80 km/h"], "answer": "B"},
